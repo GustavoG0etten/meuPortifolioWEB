@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <header class="navbar" id="navbar"> 
+
+        <ul class="title">
+            <li><a href="#">myProject</a></li>
+        </ul>
+        
+        <ul class="topicos">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Sobre Mim</a></li>
+            <li><a href="">Meus Projetos</a></li>
+            <li><a href="">Redes Sociais</a></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </header>
+
+    <section class="sobre-mim">
+        <div class="sobre-mim-texto" style="color: black;"> 
+            <h1>OLÁ SOU O GUSTAVO GOETTEN <br> DESENVOLVEDOR FULL STACK - JAVA</h1>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/673302f271.js" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                // Quando ele detectar que tem mais que 80px ele automaticamente adiciona a 
+                // classe scroll ai header
+                document.getElementById("navbar").classList.add("scroll");
+            } else {
+                // Aqui quando o scroll for menor que os 80px mencionados acima ele remove 
+                // a classe do header
+                document.getElementById("navbar").classList.remove("scroll");
+            }
+        }
+    </script>
+</body>
+
+</html>
