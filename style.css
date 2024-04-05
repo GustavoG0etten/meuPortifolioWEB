@@ -1,4 +1,6 @@
 
+/* Geral */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -6,6 +8,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgba(224, 215, 211, 0.822);
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* navbar do site */
 
 header {
     font-family: poppins;
@@ -17,7 +34,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     color: white;
-    background-color: black;
+    background-color: rgba(39, 15, 38, 0);
     position: fixed;
     width: 100%;
     top: 0;
@@ -25,7 +42,7 @@ header {
 }
 
 ul li a {
-    color: blueviolet;
+    color: blue;
 }
 
 .title {
@@ -43,8 +60,8 @@ ul li a {
 
 .title li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: rgb(255, 255, 255);
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
@@ -66,8 +83,8 @@ ul li a {
 
 .topicos li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: rgb(255, 255, 255);
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
@@ -88,8 +105,8 @@ ul li a {
 
 .sci li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: black;
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
@@ -97,56 +114,122 @@ ul li a {
 
 
 .navbar.scroll {
-    background-color: black;
+    background-color: rgb(252, 252, 252);
     padding: 10px 10%;
 }
 
 .navbar.scroll ul li a {
-    color: blueviolet;
+    color: blue;
 }
 
 .navbar.scroll .title li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: rgb(255, 255, 255);
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
 }
 
 .navbar.scroll .topicos li a {
-    color: blueviolet;
+    color: blue;
 }
 
 .navbar.scroll .topicos li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: rgb(255, 255, 255);
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
 }
 
 .navbar.scroll .sci li a {
-    color: blueviolet;
+    color: blue;
 }
 
 .navbar.scroll .sci li a:hover {
     transition: all 0.5s ease 0.125s;
-    color: palevioletred;
-    background-color: rgba(134, 68, 68, 0.295);
+    color: black;
+    background-color: #3a1cff;
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 50px;
 }
 
-.sobre-mim {
-    margin-top: 100px;
-    color: black;
-    font-size: 15px;
-    font-family: poppins;
-    padding: 0 10px;
-    background-color: yellow;
+/* Apresentação sobre mim do site */
+
+/* .texto-topo-site {
+    background-color: rgba(221, 207, 200, 0.822);
+    box-shadow: 0px 0px 20px rgb(217, 212, 221);
+    border-radius: 50px;
+    padding: 20px 30px;
+} */
+
+section.sobre-mim {
+    margin-top: 150px;
+    padding: 40px 4%;
 }
+
+section.sobre-mim .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+}
+
+.sobre-mim h1 {
+    color: black;
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.sobre-mim h1 span {
+    color: blue;
+}
+
+.sobre-mim .texto-topo-site p {
+    color: black;
+    margin: 25px 0;
+    font-size: 25px;
+}
+
+.btn-informacoes-pessoais button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3a1cff;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 10px;
+}
+
+.btn-informacoes-pessoais button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px blue;
+    color: blue;
+    transform: scale(1.05);
+}
+
+section.sobre-mim .img-topo-site img {
+    width: 300px;
+    position: relative;
+    animation: img-flutuando 2s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+@keyframes img-flutuando {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+
+
 
 
