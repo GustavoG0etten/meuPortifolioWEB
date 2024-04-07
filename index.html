@@ -10,14 +10,14 @@
 
 <body id="body">
 
-    <header class="navbar" id="navbar"> 
+    <header class="navbar" id="navbar">
 
         <ul class="title">
             <li><a href="#">my<span>Project</span></a></li>
         </ul>
-        
+
         <ul class="topicos">
-            <li><a href="">Inicio</a></li>
+            <li><a href="#Inicio">Inicio</a></li>
             <li><a href="">Sobre Mim</a></li>
             <li><a href="">Meus Projetos</a></li>
             <li><a href="">Redes Sociais</a></li>
@@ -33,19 +33,39 @@
     </header>
 
     <section class="sobre-mim">
-        <div class="interface">
+        <div class="interface" id="Inicio">
             <div class="flex">
                 <div class="texto-topo-site">
-                    <h1>Olá, eu sou o <span>Gustavo Goetten</span> <br> DESENVOLVEDOR FULL STACK - <span>JAVA <i class="fa-brands fa-java"></i></span> !!!</h1>
-                    <p>Olá, eu sou o Gustavo tenho 20 anos e este é o meu portfolio, 
-                    estudando programação em busca da minha primeira vaga na area como DEV!!!</p>
+                    <h1>Olá, eu sou o <span>Gustavo Goetten</span> <br> DESENVOLVEDOR FULL
+                        STACK - <span>JAVA <i class="fa-brands fa-java"></i></span> !!!</h1>
+                    <p>Olá, eu sou o Gustavo tenho 20 anos e este é o meu portfolio,
+                        estudando programação em busca da minha primeira vaga na area como DEV!!!</p>
 
                     <div class="btn-informacoes-pessoais">
                         <a href="#"><button>Meu curriculo <span><i class="fa-solid fa-file"></i></span></button></a>
                         <a href="#"><button>Meu WhatsApp <i class="fa-brands fa-whatsapp"></i></button></a>
                         <a href="#"><button>Meu Github <i class="fa-brands fa-github"></i></button></a>
                     </div>
-                </div> 
+
+                    <div class="minhas-linguagens">
+                        <ul class="sci-linguagens">
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-html5"></i> <span
+                                        class="nome-linguagem">HTML5</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-css3-alt"></i> <span
+                                        class="nome-linguagem">CSS3</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-js"></i> <span class="nome-linguagem">JavaScript |
+                                        JS</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-java"></i> <span
+                                        class="nome-linguagem">Java</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-angular"></i> <span
+                                        class="nome-linguagem">Angular</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-solid fa-database"></i> <span
+                                        class="nome-linguagem">PostgreSQL</span></a></li>
+                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-bootstrap"></i> <span
+                                        class="nome-linguagem">Bootstrap</span></a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="img-topo-site">
                     <img src="img/hello-world.png" alt="">
@@ -54,36 +74,64 @@
         </div>
     </section>
 
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
-    <p>kkkkkkkkkkkkkkkkkkkkkkkkk</p>
+
+
+    <section class="secao-dos-icones">
+
+        <div class="icones">
+            <div class="icones-animados">
+                <i class="fa-brands fa-html5" id="html"></i>
+                <i class="fa-brands fa-css3-alt" id="css"></i>
+                <i class="fa-brands fa-js" id="js"></i>
+                <i class="fa-brands fa-java" id="java"></i>
+                <i class="fa-brands fa-angular" id="angular"></i>
+                <i class="fa-solid fa-database" id="sql"></i>
+                <i class="fa-brands fa-bootstrap" id="bootstrap"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section class="secao-vazia-01">
+
+    </section>
+
+
+
+
 
     <script src="https://kit.fontawesome.com/673302f271.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var inicioLink = document.querySelector('a[href="#Inicio"]');
+
+            inicioLink.addEventListener("click", function (event) {
+                event.preventDefault(); // Evita o comportamento padrão do link
+
+                var targetId = this.getAttribute("href").substring(1); // Obtém o ID do alvo
+                var targetElement = document.getElementById(targetId); // Obtém o elemento alvo
+
+                if (targetElement) {
+                    var navbarHeight = document.getElementById("navbar").clientHeight;
+                    var targetPosition = targetElement.offsetTop - navbarHeight; // Calcula a posição correta
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth" // Adiciona um scroll suave
+                    });
+                }
+            });
+        });
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
+
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 // Quando ele detectar que tem mais que 80px ele automaticamente adiciona a 
                 // classe scroll ai header
@@ -93,7 +141,13 @@
                 // a classe do header
                 document.getElementById("navbar").classList.remove("scroll");
             }
+
+            document.querySelector(".interface").style.paddingTop = scrollPadding + "px";
         }
+
+        var copia = document.querySelector(".icones-animados").cloneNode(true);
+        document.querySelector('.icones').appendChild(copia)
+
     </script>
 </body>
 
