@@ -1,7 +1,8 @@
 
 /* Geral */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -403,7 +404,71 @@ section.sobre-mim .img-topo-site img {
     filter: none !important;
 }
 
+/* Icones carta de apresentação */
 
+.icones-apresentacao {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.icones-apresentacao li {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 25px #00000055;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.2s ;
+}
+
+.icones-apresentacao li:hover {
+    width: 160px;
+}
+
+.icones-apresentacao li span {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.icones-apresentacao li .icon {
+    font-size: 1.6em;
+    transition: 0.5s;
+}
+
+.icones-apresentacao li .txt {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transform: scale(0);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.icones-apresentacao li:hover .txt {
+    transform: scale(1);
+}
+
+.icones-apresentacao li:hover .icon {
+    transform: scale(0);
+}
+
+.icones-apresentacao li::before {
+    content: '';
+    position: absolute;
+    background-color: var(--cor1);
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+.icones-apresentacao li:hover::before {
+    opacity: 1;
+}
 
 
 
