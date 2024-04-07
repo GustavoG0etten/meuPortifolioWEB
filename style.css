@@ -28,6 +28,12 @@ section {
     display: flex;
 }
 
+/* ScrollReveal */
+
+.efeito-texto-topo {
+    visibility: hidden;
+}
+
 /* navbar do site */
 
 header {
@@ -184,14 +190,7 @@ section.sobre-mim .flex {
     gap: 65px;
 }
 
-section:nth-of-type(3) {
-    background-image: url(img/background-01.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 .sobre-mim h1 {
     color: black;
@@ -243,6 +242,40 @@ section.sobre-mim .img-topo-site img {
     100% {
         top: 30px;
     }
+}
+
+
+.minhas-linguagens li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 40px;
+    position: relative;
+}
+
+.sci-linguagens {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sci-linguagens span {
+    transition: all 3s ease 1s;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sci-linguagens li:hover span {
+    transition: all 3s ease 1s;
+    display: block;
+    opacity: 1;
 }
 
 /* Estilizando carrossel de icones animados */
@@ -338,9 +371,37 @@ section.sobre-mim .img-topo-site img {
     color: purple;
 }
 
+/* Carta de apresentação */
 
+/* section:nth-of-type(3) {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
 
+.imagemdefundo {
+    background-image: url(img/background-01.jpg);
+    display: flex;
+    height: 600px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.carta-de-apresentacao {
+    width: 50%;
+    height: 600px;
+    top: 0;
+    right: 0;
+    background: #c3002f;
+    filter: none !important;
+}
 
 
 

@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body id="body">
 
+    <!-- NavBar -->
     <header class="navbar" id="navbar">
 
         <ul class="title">
@@ -32,10 +35,11 @@
         </ul>
     </header>
 
+    <!-- Sobre-mim -->
     <section class="sobre-mim">
         <div class="interface" id="Inicio">
             <div class="flex">
-                <div class="texto-topo-site">
+                <div class="texto-topo-site efeito-texto-topo">
                     <h1>Olá, eu sou o <span>Gustavo Goetten</span> <br> DESENVOLVEDOR FULL
                         STACK - <span>JAVA <i class="fa-brands fa-java"></i></span> !!!</h1>
                     <p>Olá, eu sou o Gustavo tenho 20 anos e este é o meu portfolio,
@@ -49,20 +53,20 @@
 
                     <div class="minhas-linguagens">
                         <ul class="sci-linguagens">
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-html5"></i> <span
-                                        class="nome-linguagem">HTML5</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-css3-alt"></i> <span
-                                        class="nome-linguagem">CSS3</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-js"></i> <span class="nome-linguagem">JavaScript |
-                                        JS</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-java"></i> <span
-                                        class="nome-linguagem">Java</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-angular"></i> <span
-                                        class="nome-linguagem">Angular</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-solid fa-database"></i> <span
-                                        class="nome-linguagem">PostgreSQL</span></a></li>
-                            <li class="botao-linguagem"><a href="#"><i class="fa-brands fa-bootstrap"></i> <span
-                                        class="nome-linguagem">Bootstrap</span></a></li>
+                            <li><a href="#"><i class="fa-brands fa-html5" style="color: orangered;"></i></a><span
+                                ><i class="fa-brands fa-html5"></i> HTML5</span></li>
+                            <li><a href="#"><i class="fa-brands fa-css3-alt" style="color: rgb(59, 90, 228);"></i></a><span
+                                ><i class="fa-brands fa-css3-alt"></i> CSS3</span></li>
+                            <li><a href="#"><i class="fa-brands fa-js" style="color: yellow;"></i></a><span
+                                ><i class="fa-brands fa-js"></i> JavaScript JS</span></li>
+                            <li><a href="#"><i class="fa-brands fa-java" style="color: rgb(59, 90, 228);"></i></a><span
+                                ><i class="fa-brands fa-java"></i> Java</span></li>
+                            <li><a href="#"><i class="fa-brands fa-angular" style="color: #c3002f;"></i></a><span
+                                ><i class="fa-brands fa-angular"></i> Angular</span></li>
+                            <li><a href="#"><i class="fa-solid fa-database" style="color: blue;"></i></a><span
+                                ><i class="fa-solid fa-database"></i> SQL</span></li>
+                            <li><a href="#"><i class="fa-brands fa-bootstrap" style="color: purple;"></i></a><span
+                                ><i class="fa-brands fa-bootstrap"></i> BootStrap</span></li>
                         </ul>
                     </div>
                 </div>
@@ -74,8 +78,7 @@
         </div>
     </section>
 
-
-
+    <!-- Carrossel de icones -->
     <section class="secao-dos-icones">
 
         <div class="icones">
@@ -91,22 +94,26 @@
         </div>
 
     </section>
+        
+    <!-- Carta de apresentacao -->
+    <section class="apresentacao">
 
-    <section>
+        <div class="imagemdefundo">
+            <div class="carta-de-apresentacao">
+                
+            </div>
 
+        </div>
+
+        
     </section>
 
-    <section class="secao-vazia-01">
-
-    </section>
 
 
 
 
-
+    <!-- Area de script -->
     <script src="https://kit.fontawesome.com/673302f271.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var inicioLink = document.querySelector('a[href="#Inicio"]');
